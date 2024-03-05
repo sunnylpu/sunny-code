@@ -1,25 +1,48 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-void reverse(int arr[], int n){
-    int start=0;
-    int end=n-1;
-    while(start<=end){
-        // Swap elements
-        swap(arr[start],arr[end]);
+int SwapAleternate(int arr[],int size){
+    int start=0,end=start+1;
+    int i=0;
+    while (start <=size) {
+        // swapping the elements
+        // int temp =arr[start];
+        // arr[start] = arr[end];
+        // arr[end]=temp;
+        if (i+1<size){
+        swap(arr[i],arr[i+1]);
+        i+=2;
+
+        }
+        // moving towards the middle of the array
         start++;
         end--;
     }
 }
-void printArray(int arr[],int n){
-    for (int i = 0; i < n; i++){
+void printArray(int arr[],int size){
+    for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
-    }cout<<endl;
+    cout<<endl;
 }
-int main() {
-    int arr[5]={3,56,6,-6,4};
-    int brr[6]={3,47,7,6,-3,-1};
-    reverse(arr,5);
-    reverse(brr,6);
-    printArray(arr,5);
-    printArray(brr,6);
+int main(){
+    int arr[]={9,8,7,6,5,4,3,2,1};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    cout <<"Given Array is: \n";
+    printArray(arr,n);
+    
+    cout << "\nModified Array after calling SwapAlternate()\n";
+    SwapAleternate(arr,n);
+    printArray(arr,n);
+    return 0;
 }
+
+// Output:
+// Given Array is:
+// 9 8 7 6 5 4 3 2 1
+// 
+// Modified Array after calling SwapAlternate()
+// 9 1 8 2 7 3 6 5 4
+// *
+// }
+// int /main(){
+
+// }/
