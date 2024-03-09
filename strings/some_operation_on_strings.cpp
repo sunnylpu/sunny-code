@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
-void reversestring(int name[],int size){
+void reversestring(char name[],int size){
     int start=0;
     int end=size-1;
     while(start<end){
         swap(name[start++],name[end--]);
     }
 }
-int checkpalindrome(int name[],int size){
+bool checkpalindrome(char name[],int size){
     int start=0;
     int end=size-1;
     while (start<end)
@@ -20,7 +20,7 @@ int checkpalindrome(int name[],int size){
             end--;
         }
     }
-    return 1;
+    return true;
     
 }
 
@@ -35,7 +35,10 @@ int main(){
     char name[20];
     cout<<"enter your name"<<endl;
     cin>>name;
-    cout<<"length is: ";
     int len=getlength(name);
+    cout<<"length is:"<<len<<endl;
+    int palindrome=checkpalindrome(name,len);
+    cout<<palindrome<<endl;
+
     return 0;
 }
