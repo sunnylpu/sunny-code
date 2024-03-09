@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int reversestring(int name[],int size){
+void reversestring(int name[],int size){
     int start=0;
     int end=size-1;
     while(start<end){
@@ -24,7 +24,7 @@ int checkpalindrome(int name[],int size){
     
 }
 
-int getlength(int name[]){
+int getlength(char name[]){
     int count=0;
     for(int i=0;name[i]!='\0';i++){
         count++;
@@ -32,10 +32,10 @@ int getlength(int name[]){
 
 }
 int main(){
-    char nam[20];
+    char name[20];
     cout<<"enter your name"<<endl;
-    cin>>nam;
+    cin>>name;
     cout<<"length is: ";
-    getlength(nam);
+    int len=getlength(name);
     return 0;
 }
