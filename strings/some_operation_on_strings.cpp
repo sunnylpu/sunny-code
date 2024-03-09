@@ -37,6 +37,8 @@ int main(){
     cin>>name;
     int len=getlength(name);
     cout<<"length is:"<<len<<endl;
+    reversestring(name,len);
+    cout<<"your name is :"<<name<<endl;
     int palindrome=checkpalindrome(name,len);
     cout<<palindrome<<endl;
 
