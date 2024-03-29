@@ -14,6 +14,6 @@ int main() {
     cout<<fact;
     //cout << "Factorial of 5 is: " << fact;
    int n = 5 , r = 2 ;
-    cout << "\nNumber of ways to choose r items from n items in a set is "<<nCr(n,r);
+    cout << "\nNumber of ways to choose r items from n items in a set is  hj1"<<nCr(n,r);
     return 0;
 }
