@@ -10,7 +10,12 @@ void PrintingSum(int arr[],int size){
 }
 
 int main() {
-    int arr[] = {12, 34, 56, 78};
-    PrintingSum(arr[],size);
-    return 0;
+    int arr[1000];
+    for(int i=0;i<12;i++){
+        cin>>arr[i];
+    }
+    int n = sizeof(arr)/sizeof(arr[0]);
+    PrintingSum(arr,n);
+   return 0;
 }
+ 
