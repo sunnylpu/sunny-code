@@ -10,6 +10,8 @@ int main(){
         }
         else {
             cout<<i<<" "<<"odd number: "<<endl;
+
+            
         }
 
         
