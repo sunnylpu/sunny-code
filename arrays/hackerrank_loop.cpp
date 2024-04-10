@@ -19,11 +19,11 @@ int main() {
         }
         }
     else{
-        if (n%2==0){
+         if (n%2==0){
             cout<<"even";
         }
         else{
-            cout<<"odd";
+             cout<<"odd";
         }
     }return 0;
 }
