@@ -13,7 +13,7 @@ int getMax(int num[],int n){
 int getMin(int num[],int n){
     int min= INT_MAX;
     for(int i=0;i<n;i++){
-        if (num[i]<min){
+        if ( num[i]<min){
             min=num[i];
             
         }
@@ -22,7 +22,7 @@ int getMin(int num[],int n){
 int main(){
     int size;
     cin>>size;
-    int num[5];
+    int  num[5];
     for(int i=0;i<size;i++){
         cin>>num[i];
     }
