@@ -6,7 +6,7 @@ int main(){
     cout<<&num<<endl;
     int *ptr=&num;
     cout<<"value is :"<<*ptr<<endl;
-    ptr++;
+    (*ptr)++;
     cout<<"value is :"<<*ptr<<endl;
     cout<<"size of integer: "<<sizeof(num)<<endl;
     cout<<"size of pointer: "<<sizeof(ptr)<<endl;
