@@ -10,5 +10,9 @@ int main(){
     cout<<"value is :"<<*ptr<<endl;
     cout<<"size of integer: "<<sizeof(num)<<endl;
     cout<<"size of pointer: "<<sizeof(ptr)<<endl;
+
+    int *q=ptr;
+    cout<<q<<"-"<<ptr<<endl;
+    cout<<*q<<"-"<<*ptr<<endl;
     return 0;
 }
