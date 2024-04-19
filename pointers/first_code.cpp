@@ -12,11 +12,11 @@ int main(){
 
 
 
-    
+
     cout<<"size of pointer: "<<sizeof(ptr)<<endl;
 
     int *q=ptr;
     cout<<q<<"-"<<ptr<<endl;
     cout<<*q<<"-"<<*ptr<<endl;
     return 0;
-}
+} 
