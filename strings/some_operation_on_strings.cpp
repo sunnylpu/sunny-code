@@ -54,6 +54,8 @@ int main(){
     
     reversestring(name,len);
     cout<<"your name is :"<<name<<endl;
+
+    
     
     
     int palindrome=checkpalindrome(name,len);
