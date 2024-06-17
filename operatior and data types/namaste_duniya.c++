@@ -1,10 +1,7 @@
 #include <iostream>
 
 int main() {
-    int a = 123;
-
-    // Printing the value of 'a'
-    std::cout << "a = " << a << std::endl;
+    std::cout << "namaste duniya" << std::endl;
 
     return 0;
 }
