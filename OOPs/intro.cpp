@@ -8,9 +8,15 @@ class Boy{
     
 };
 int main(){
-    Boy sunny;
-    sunny.health=70;
-    sunny.level='A';
-    cout<<"health  "<<sunny.health<<endl;
-    cout<<"level  "<<sunny.level<<endl;
+    // this is static allocation
+    // Boy sunny;
+    // sunny.health=70;
+    // sunny.level='A';
+    // cout<<"health  "<<sunny.health<<endl;
+    // cout<<"level  "<<sunny.level<<endl;
+    
+
+
+    // dynamic allocation
+    Boy *b=new Boy;
 }
