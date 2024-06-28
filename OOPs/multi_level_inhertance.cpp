@@ -9,14 +9,18 @@ class animal{
 
     public:
     void speak(){
-        cout<<" speaking "<<endl;
+        cout<<" speaking loudly i am in love "<<endl;
     }
 };
 
 class dog: public animal{
 
 };
+
+class germanshephard: public dog{
+
+};
 int main(){
-    dog cow;
-    cow.speak();
+    germanshephard nikhil;
+    nikhil.speak();
 }
