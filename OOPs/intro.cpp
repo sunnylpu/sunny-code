@@ -27,7 +27,7 @@ int main(){
     
     int r(Boy);
     cout<<&r<<endl;
-    r.print();
+    
 
 
 
