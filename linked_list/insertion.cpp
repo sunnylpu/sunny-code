@@ -17,6 +17,7 @@ void insertathead(node* &head,int d){
     node* temp=new node(d);
     temp ->next=head;
     head=temp;
+
 }
 // pirnting a linked list and tranverse in a link list
 void print(node* &head){
@@ -41,6 +42,8 @@ int main(){
     //pirnt after inserion
     print(head);
     cout<<endl;
+    insertathead(head,15);
+    print(head);
 
     return 0;
 }
