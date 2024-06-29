@@ -13,12 +13,13 @@ class node{
 
 };
 // insertion in a linked list
-void insertathead(node* &head,int d){
-    node* temp=new node(d);
-    temp ->next=head;
-    head=temp;
+    void tailinsert(node* &tail,int d){
+        node* node2=new node(d);
+        tail ->next=node2;
+        tail=node2;
 
-}
+
+    }
 // pirnting a linked list and tranverse in a link list
 void print(node* &head){
     node*temp=head;
@@ -31,20 +32,12 @@ void print(node* &head){
 int main(){
     // create a new node
     node* node1=new node(10);
-    cout<<node1 -> data<<endl;
-    cout<<node1 -> next <<endl;
-    // head pointed to new node
-    node* head=node1;
-    print(head);
-    cout<<endl;
-    //insertion
-    insertathead(head,12);
-    //pirnt after inserion
-    print(head);
-    cout<<endl;
-    insertathead(head,15);
+    node* tail=node1;
+    print(tail);
+    tailinsert(tail,12);
+    print(tail);
+    tailinsert(tail,15);
+    print(tail);
     
-    print(head);
-
     return 0;
 }
