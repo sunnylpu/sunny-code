@@ -10,6 +10,7 @@ class node{
         this -> data=data;
         this -> next=NULL;
     }
+    void insertAtHead()
 };
 int main(){
     node* node1=new node(10);
