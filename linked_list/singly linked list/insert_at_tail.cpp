@@ -13,7 +13,15 @@ class node{
         this -> next=NULL;
     }
     //destructor
-    
+    ~node(){
+        int value=this->data;
+        //memory free
+        if(this ->next!=NULL){
+            delete next;
+            this ->next=NULL;
+        }
+        cout<<endl<<"memory is free for node with data"<<value<<endl;
+    }
 
 };
 void insertathead(node* &head,int d){
@@ -67,11 +75,22 @@ void delete1(int position,node* &head){
         node*temp=head;
         head=head -> next;
         //memory free start node ki
+        temp->next=NULL;
         delete temp;
     }
     else{
         //deleting middle and last node
-
+        node* curr=head;
+        node* prev=NULL;
+        int cnt=1;
+        while(cnt<position){
+            prev=curr;
+            curr=curr->next;
+            cnt++;
+        }
+        prev->next=curr->next;
+        curr->next=NULL;
+        delete curr;
     }
 }
 // pirnting a linked list and tranverse in a link list
@@ -98,6 +117,8 @@ int main(){
     print(head);
     cout<<endl;
      insertmiddle(head,tail,5,11);
+    print(head);
+    delete1(2,head);
     print(head);
     return 0;
 }
