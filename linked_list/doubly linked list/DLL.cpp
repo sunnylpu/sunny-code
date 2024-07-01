@@ -202,7 +202,33 @@ void insertatposition(node* &head, node* &tail, int position, int d) {
     temp->next = nodetoinsert; // Link the previous node to the new node
     nodetoinsert->prev = temp; // Link the new node back to the previous node
 }
-
+void delete1(int position,node* &head){
+    // deleting start and forst node
+    if(position==1){
+        node*temp=head;
+        head=head -> next;
+        temp->next->prev=NULL;
+        head=temp->next;
+        //memory free start node ki
+        temp->next=NULL;
+        delete temp;
+    }
+    else{
+        //deleting middle and last node
+        node* curr=head;
+        node* prev=NULL;
+        int cnt=1;
+        while(cnt<position){
+            prev=curr;
+            curr=curr->next;
+            cnt++;
+        }
+        curr->prev=NULL;
+        prev->next=curr->next;
+        curr->next=NULL;
+        delete curr;
+    }
+}
 int main() {
     node* head = NULL; // Initialize head to NULL
     node* tail = NULL; // Initialize tail to NULL
@@ -221,6 +247,10 @@ int main() {
 
     // Insert at position 2 and print the list
     insertatposition(head, tail, 2, 45);
+    print(head);
+
+    //delete element
+    delete1(3,head);
     print(head);
 
     return 0;
