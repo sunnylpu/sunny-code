@@ -151,9 +151,9 @@ bool detectLoop(Node* head) {
 
 }
 
-    bool floyd_loop_detection(Node* tail){
+    Node* floyd_loop_detection(Node* tail){
         if(tail==NULL){
-            return false;
+            return NULL;
         }
 
         Node* slow=tail;
@@ -169,14 +169,42 @@ bool detectLoop(Node* head) {
                 slow=slow->next;
 
                 if(slow==fast){
-            return 1;
+                return slow;
         }
 
         }
-            return 0;
+            return NULL;
 
         
 
+    }
+
+    Node* getstartingnode(Node* tail){
+        if(tail==NULL){
+            return NULL;
+        }
+        Node* intersection=floyd_loop_detection(tail);
+        Node* slow=tail;
+
+        while(slow!=intersection){
+            slow=slow->next;
+            intersection=intersection->next;
+        }
+
+        return slow;
+    }
+
+    void removeloop(Node* tail){
+
+        if(tail==NULL){
+            return ;
+        }
+        Node* startingofloop=getstartingnode(tail);
+        Node* temp=startingofloop;
+        while(temp->next!=startingofloop){
+            temp=temp->next;
+        }
+        temp->next=NULL;
     }
 
 int main() {
