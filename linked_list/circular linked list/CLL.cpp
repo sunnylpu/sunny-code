@@ -151,18 +151,45 @@ bool detectLoop(Node* head) {
 
 }
 
+    bool floyd_loop_detection(Node* tail){
+        if(tail==NULL){
+            return false;
+        }
+
+        Node* slow=tail;
+        Node* fast=tail;
+
+        while(slow!=NULL && fast!=NULL){
+
+            fast=fast->next;
+            if(fast!=slow){
+                fast=fast->next;
+                
+            }
+                slow=slow->next;
+
+                if(slow==fast){
+            return 1;
+        }
+
+        }
+            return 0;
+
+        
+
+    }
 
 int main() {
 
     Node* tail = NULL;
 
-   // insertNode(tail, 5, 3);
+    insertNode(tail, 5, 3);
     //print(tail);
 
-  //  insertNode(tail, 3, 5);
+    insertNode(tail, 3, 5);
    // print(tail);
 
-/*
+
     insertNode(tail, 5, 7);
     print(tail);
 
@@ -179,11 +206,8 @@ int main() {
     print(tail);
    
 
-    deleteNode(tail, 5);
-    print(tail);
-     */
 
-    if(isCircularList(tail)) {
+    if(floyd_loop_detection(tail)) {
         cout << " Linked List is Circular in nature" << endl;
     }
     else{
