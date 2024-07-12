@@ -3,6 +3,13 @@
 using namespace std;
 
 int main(){
-    queue <int> q;
-    q.push(3);
+    
+
+
+
+
+
+
+    // queue <int> q;
+    // q.push(3);
 }
