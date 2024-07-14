@@ -29,9 +29,17 @@ node* buildtree(node* root){
         return NULL;
     }
     else{
-        cout<<"Enter for left node "<<endl;
+
+        //insertion in left node
+        cout<<"Enter for left node "<<data<<endl;
         root->left=buildtree(root->left);
+
+        //insertion in right node
+        cout<<" Enter the data for right node "<<data<<endl;
+        root->right=buildtree(root->right);
+         return root;
     }
+   
 }
 
 
