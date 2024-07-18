@@ -124,7 +124,7 @@ void levelordertraversal(node* root) {
         node* temp = q.front();
         q.pop();
 
-        if (temp == nullptr) { // End of current level
+        if (temp == nullptr) { // End of current level  (purana level complete ho chukaa h )
             cout << endl;
             if (!q.empty()) {
                 q.push(nullptr);
