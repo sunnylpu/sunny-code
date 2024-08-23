@@ -2,19 +2,14 @@
 using namespace std;
 
 void deleteElement(int arr[], int& size, int index) {
-    // Check if index is valid
     if (index < 0 || index >= size) {
         cout << "Index out of range" << endl;
         return;
     }
     
-    // Shift elements to the left
     for (int i = index; i < size - 1; i++) {
         arr[i] = arr[i + 1];
-    }
-    
-    // Reduce the size of the array
-    size--;
+    }    size--;
 }
 
 void printArray(int arr[], int size) {
@@ -26,7 +21,7 @@ void printArray(int arr[], int size) {
 
 int main() {
     int arr[100] = {1, 2, 3, 4, 5};
-    int size = 5; // Current number of elements in the array
+    int size = 5; 
 
     cout << "Original array: ";
     printArray(arr, size);
