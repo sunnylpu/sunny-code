@@ -20,6 +20,19 @@ public:
     }
 };
 
+
+class rectangle{
+
+    private:
+    int length;
+    int breadth;
+
+    public:
+    int area(){
+        return length*breadth; 
+    }
+
+};
 int main() {
     double r;
     cout << "Enter the radius of the circle: ";
