@@ -23,10 +23,10 @@ class student{
 
     void print_details(){
         cout<<"the name of the person is : "<<name<<endl;
-         cout<<"the age of the person is : "<<age<<endl;
-          cout<<"the mob_no of the person is : "<<mob_no<<endl;
-           cout<<"the roll_no of the person is : "<<roll_no<<endl;
-            cout<<"the reg_no of the person is : "<<reg_no<<endl;
+        cout<<"the age of the person is : "<<age<<endl;
+        cout<<"the mob_no of the person is : "<<mob_no<<endl;
+        cout<<"the roll_no of the person is : "<<roll_no<<endl;
+        cout<<"the reg_no of the person is : "<<reg_no<<endl;
 
     }
 };
