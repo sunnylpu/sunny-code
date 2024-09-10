@@ -40,7 +40,7 @@ void insertathead(node* &head,int d){
 
     }
     void insertmiddle(node* &head,node* &tail,int position,int d){
-        //insert at start by recutsion
+        //insert at start by recursion
         if(position==1){
                 insertathead(head,d);
                 return;
