@@ -1,4 +1,5 @@
 #include <iostream>
+#include<array>
 using namespace std;
 void printArray(int arr[] , int size){
     cout<<"print the array "<<endl;
