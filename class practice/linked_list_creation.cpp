@@ -17,7 +17,22 @@ void insert_at_head(int data, Node* &head) {
     newnode->next = head;
     head = newnode;
 }
+void insert_at_tail(int data,Node* &tail){
+    Node* node2=new Node(data);
+    Node* temp=tail;
+    tail->next=node2;
+    node2=tail;
+}
 
+void node_to_insert(int data,int position,Node* &head){
+    Node* temp=head;
+    int cnt=1;
+    while(cnt<position-1){
+        temp=temp->next;
+        cnt++;
+    }
+    
+}
 void display(Node* head) {
     Node* temp = head;
     while (temp != NULL) {
@@ -28,13 +43,14 @@ void display(Node* head) {
 }
 
 int main() {
-    Node* head = nullptr;  
 
-    insert_at_head(10, head);
-    insert_at_head(20, head);
-    insert_at_head(30, head);
+    Node* node1=new Node(10);
+    Node* head = node1;
+    Node* tail= node1;
 
-    display(head);
+    insert_at_tail(10,tail);
+    insert_at_tail(20,tail);
+    display(tail);
 
     return 0;
 }
