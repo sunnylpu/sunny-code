@@ -36,23 +36,26 @@ class Stack{
     }
 
     int peek(){
-
+        if(top>=0 ){
+            return arr[top];
+        }
+        else{
+            cout<<"stack is empty"<<endl;
+            return -1;
+        }
 
     }
 
     bool isempty(){
+        if(top==-1){
+            return true;
+        }
+        else{
+            return false;
+        }
 
     }
 };
 int main(){
-    stack<int> s;
-    int n;
-    cin>>n;
-    for(int i=0;i<n;i++){
-        s.push(i);
-    }
-    for(int i=0;i<n;i++){
-        cout<<s.top()<<" ";
-        s.pop();
-    }
+    Stack st(5);
 }
