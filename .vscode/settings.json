@@ -1,3 +1,9 @@
 {
-    "editor.mouseWheelZoom": true
+  "code-runner.runInTerminal": true,
+  "terminal.integrated.defaultProfile.osx": "zsh", // Use zsh for macOS terminal
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",   // Set g++ as default compiler
+  "C_Cpp.default.cppStandard": "c++17",          // Use C++17 as default standard
+  "C_Cpp.default.includePath": [
+    "/Library/Developer/CommandLineTools/usr/include/c++/v1" // Include system paths for macOS
+  ]
 }

@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/sunnytyagi/Documents/sunny-code/striver dsa practice/basic maths/test'
+relocations:     []
+...
