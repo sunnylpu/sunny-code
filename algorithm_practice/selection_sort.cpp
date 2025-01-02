@@ -16,7 +16,9 @@ void selection_sort(int *arr,int n){
 int main(){
     int arr[100];
     int n;
+    cout<<"enter the size: "<<endl;
     cin>>n;
+    cout<<" enter the elements: "<<endl;
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
