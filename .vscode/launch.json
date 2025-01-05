@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "data_types",
+      "request": "launch",
+      "mainClass": "data_types",
+      "projectName": "sunny-code_ca96692c"
+    },
+    {
+      "type": "java",
+      "name": "command_line_argument",
+      "request": "launch",
+      "mainClass": "command_line_argument",
+      "projectName": "sunny-code_ca96692c"
+    },
+    {
+      "type": "java",
       "name": "string_mainipulation",
       "request": "launch",
       "mainClass": "string.string_mainipulation",
