@@ -1,17 +1,5 @@
-// let arr=[1,2,3,4,5];
-
-// let brr=new Array('sunny',2004,'tyagi');
-// console.log(brr);
-// console.log(arr);
-// console.log(typeof(arr));
-// console.log(typeof(brr));
-// brr.unshift('lovely professonal university');
-// console.log(brr);
-
-let arr=[1,2,3,4,5];
-arr.map(
-    (Number)=>{
-        console.log(Number**2);
-    }
-
-);
+let friend=['sunny,nikhil,rahul,rohit'];
+console.log("my old frined list",friend);
+// add a friend in the list
+friend.push('sahil');
+console.log("my new frined list",friend);
