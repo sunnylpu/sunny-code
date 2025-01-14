@@ -1,5 +1,10 @@
-let friend=['sunny,nikhil,rahul,rohit'];
-console.log("my old frined list",friend);
-// add a friend in the list
-friend.push('sahil');
-console.log("my new frined list",friend);
+let arr=[100,12,91,2,3,86];
+let ans = arr.filter((number) => number > 23);
+console.log(ans);
+
+let grade=arr.map(arr=>{
+    if(arr>=90) return 'A';
+    if(arr>=80) return 'B';
+    return 'C';
+});
+console.log(grade);
