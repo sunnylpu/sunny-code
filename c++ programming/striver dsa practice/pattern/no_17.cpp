@@ -17,4 +17,6 @@ int main(){
     int n;
     cin>>n;
     alphahill(n);
+    char num1='A' + n;
+    cout<<endl<<num1;
 }
