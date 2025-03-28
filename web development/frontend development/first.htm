@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patent Filing Assessment Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <h1>Patent Filing Assessment Form</h1>
+    <form action="/submit-assessment" method="post">
+        <label for="student-name">Student Name:</label><br>
+        <input type="text" id="student-name" name="student-name" required><br><br>
+
+        <label for="student-id">Student ID:</label><br>
+        <input type="text" id="student-id" name="student-id" required><br><br>
+
+        <label for="patent-idea">Patent Idea/Prototype Description:</label><br>
+        <textarea id="patent-idea" name="patent-idea" rows="5" cols="40" required></textarea><br><br>
+
+        <label for="ipr-description">IPR Description (10 marks):</label><br>
+        <textarea id="ipr-description" name="ipr-description" rows="3" cols="40" required></textarea><br><br>
+
+        <label for="originality-innovation">Originality and Innovation (15 marks):</label><br>
+        <textarea id="originality-innovation" name="originality-innovation" rows="3" cols="40" required></textarea><br><br>
+
+        <label for="proposal-submission">Patent Proposal Submission to RDC (5 marks):</label><br>
+        <textarea id="proposal-submission" name="proposal-submission" rows="3" cols="40" required></textarea><br><br>
+
+        <label for="rdc-acceptance">Acceptance from RDC (5 marks):</label><br>
+        <textarea id="rdc-acceptance" name="rdc-acceptance" rows="3" cols="40" required></textarea><br><br>
+
+        <label for="presentation-qa">Presentation and Question Answers (15 marks):</label><br>
+        <textarea id="presentation-qa" name="presentation-qa" rows="3" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
