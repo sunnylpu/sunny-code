@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "intro",
+      "request": "launch",
+      "mainClass": "intro",
+      "projectName": "sunny-code_ca96692c"
+    },
+    {
+      "type": "java",
+      "name": "intro",
+      "request": "launch",
+      "mainClass": "collections.array_list.intro",
+      "projectName": "sunny-code_ca96692c"
+    },
+    {
+      "type": "java",
+      "name": "Dog",
+      "request": "launch",
+      "mainClass": "Dog",
+      "projectName": "sunny-code_ca96692c"
+    },
+    {
+      "type": "java",
+      "name": "animal",
+      "request": "launch",
+      "mainClass": "animal",
+      "projectName": "sunny-code_ca96692c"
+    },
+    {
+      "type": "java",
       "name": "data_types",
       "request": "launch",
       "mainClass": "data_types",
@@ -57,7 +85,7 @@
       "runtimeArgs": [
         "--remote-debugging-port=9222"
       ],
-      "url": "/Users/sunnytyagi/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.6/out/startpage/index.html", // Provide your project's url to finish configuring
+      "url": "/Users/sunnytyagi/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.6/out/startpage/index.html",
       "presentation": {
         "hidden": true
       }
