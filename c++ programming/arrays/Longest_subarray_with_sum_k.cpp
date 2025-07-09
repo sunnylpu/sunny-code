@@ -1,21 +1,22 @@
 #include <iostream>
 using namespace std;
 
-void subarray(int arr[1000], int n,int k){
-  int start=arr[0];
-  int end=arr[n-1];
-  int sum=0;
+int brutesubarray(int arr[1000], int n,int k){
+  int maxlen=0;
   for(int i=0;i<n;i++){
-    sum+=arr[i];
-  }
-
-  for(int i=0;i<n;i++){
-    if(sum>k){
-        start++;
+      int sum=0;
+      int cnt=0;
+      for(int j=i;j<n;j++){
+        sum+=arr[j];
+        cnt++;
+        if(sum==k){
+          if(cnt>maxlen){
+            maxlen=cnt;
+          }
+        }
+      }
     }
-  }
-
-  
+    return maxlen;
 }
 int main(){
   int n;
@@ -24,5 +25,8 @@ int main(){
   for(int i=0;i<n;i++){
     cin>>arr[i];
   }
-  subarray(arr,n);
+  int k;
+  cin>>k;
+  int ans=brutesubarray(arr,n,k);
+  cout<<ans;
 }

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+ #cart{
+    position: absolute;
+    left: 85%;
+    top: 5%;
+    transform: translate(-50%,-50%);
+    border-radius:300px;
+    padding: 14px;
+}
+ #menu{
+    position: absolute;
+    left: 90%;
+    top: 5%;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+    padding: 13px;
+}
+#nav{
+
+}

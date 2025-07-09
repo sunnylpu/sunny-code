@@ -1,5 +1,10 @@
-let ans=45;
-console.log(ans);
-alert("Welcome, Sunny!");
-let userInput = prompt("Enter your name:");
-console.log("User entered:", userInput);
+function tst(){
+  let x=10;
+  return function myname(){
+    console.log(x);
+  };
+}
+
+let fun=tst();
+x=20;
+fun();
