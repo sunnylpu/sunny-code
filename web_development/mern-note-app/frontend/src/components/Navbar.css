@@ -1,0 +1,64 @@
+/* frontend/src/components/Navbar.css */
+.navbar {
+    background-color: var(--card-bg-light);
+    border-bottom: 1px solid var(--border-color-light);
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color-light);
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+    color: var(--primary-color-light);
+}
+
+.user-info {
+    font-weight: bold;
+    color: var(--primary-color-light);
+}
+
+.theme-toggle-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.theme-toggle-button:hover {
+    background-color: var(--border-color-light);
+}
+
+.navbar .button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+}

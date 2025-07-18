@@ -1,20 +1,20 @@
-'use client';
-import React, { Component, useState } from 'react'
-import Header from "@/Components/Header"
+"use client"
+import axios from 'axios'
+import React from 'react'
 
 const page = () => {
-const [num, setnum] = useState(80);
-
+  const getimage=async ()=>{
+  try {
+    const response=await axios.get("https://picsum.photos/v2/list?page=2&limit=100")
+  console.log(response);
+  } catch (error) {
+    console.error(error ,"error aa gya h")
+  }
+  }
   return (
-    <>
     <div>
-      <h1 className='absolute top-50 left-70 text-9xl'>my marks were {num}</h1>
-      <button onClick={()=>{
-        setnum(33)
-      }} className='rounded p-3 border-2 m-7'>update</button>
+      <button className='rounded ' onClick={getimage}>getimage</button>
     </div>
-    </>
-    
   )
 }
 

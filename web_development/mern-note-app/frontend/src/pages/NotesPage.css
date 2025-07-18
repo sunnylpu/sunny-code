@@ -1,0 +1,50 @@
+/* frontend/src/pages/NotesPage.css */
+.notes-page {
+    padding-top: 20px;
+}
+
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.notes-header h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color-light);
+    margin: 0;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding-bottom: 50px; /* Space for scroll */
+}
+
+.filter-sort-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.search-input,
+.tag-filter-select {
+    padding: 10px 15px;
+    border: 1px solid var(--border-color-light);
+    border-radius: 5px;
+    background-color: var(--card-bg-light);
+    color: var(--text-color-light);
+    font-size: 1rem;
+    flex: 1; /* Allow inputs to grow */
+    min-width: 200px; /* Minimum width for inputs */
+}
+
+.no-notes-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-color-light);
+    margin-top: 50px;
+}

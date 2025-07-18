@@ -1,0 +1,96 @@
+/* frontend/src/pages/NoteDetailPage.css */
+.note-detail-page {
+    background-color: var(--card-bg-light);
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.note-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.note-detail-header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--primary-color-light);
+    word-break: break-word; /* Break long words */
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.note-detail-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    margin-bottom: 25px;
+    color: var(--text-color-light);
+}
+
+.note-detail-tags {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.note-tag {
+    background-color: var(--border-color-light);
+    color: var(--text-color-light);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.public-badge-detail {
+    background-color: #28a745; /* Green for public */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.note-timestamps {
+    font-size: 0.85rem;
+    color: var(--secondary-color-light);
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.back-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none; /* For Link component */
+    display: inline-block; /* For Link component to apply padding/margin correctly */
+}
+
+/* Specific styles for action buttons on this page */
+.note-detail-page .button {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+}
+
+.note-detail-page .button.delete-button {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.note-detail-page .button.delete-button:hover {
+    background-color: #c82333;
+}
